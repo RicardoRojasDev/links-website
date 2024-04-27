@@ -8,8 +8,8 @@
   --font_size: 16px;
 
   /* You can change the background color by typing the color code. (If you do not enter a background-image image, the background-color will be active.) */
-  --background_color: #000;
-  --background_image: url("../img/wallpaper.jpg");
+  --background_color: #d61b1bab;
+  --background_video: url("../img/videofondo.mp4");
 
   /* You can change the frame thickness and color of the picture by typing the number of pixels and the color code. */
   --image_border_color: #000;
@@ -22,6 +22,7 @@
   /* You can change the colors of the title and description section by typing the color codes. */
   --title_color: #fff;
   --description_color: #f1c40f;
+  --description_color2: #ec0c0c;
 
   /* You can change the colors of social media icons by changing the color code. */
   --svg_color: #fff;
@@ -48,12 +49,28 @@
 }
 
 /* Basic Codes */
+footer a {
+  text-decoration: none;
+
+
+}
+
+video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.478)
+  ;
+}
 
 body {
   font: var(--font_size) var(--font_family);
   font-weight: 400;
   line-height: 1.5;
-  background: var(--background_color) var(--background_image) no-repeat center;
+  background: var(--background_color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -104,7 +121,7 @@ body {
 }
 
 .header_text h2 {
-  color: var(--description_color);
+  color: black;
   font-size: 1.5em;
 }
 
@@ -187,13 +204,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--button_text_color);
-  background-color: var(--button_background_color);
-  width: 41em;
-  margin-top: 1em;
-  padding: 0.8em;
-  border-radius: 0.3em;
-  min-height: 3.7em;
+  color: var(--button_background_color);
+  background-color:hsl(49, 83%, 51%) ;
+  width: 30em;
+  margin-top: 0.8em;
+  padding: 0.4em;
+  border-radius: 1em;
+  min-height: 2em;
   text-align: center;
 }
 
